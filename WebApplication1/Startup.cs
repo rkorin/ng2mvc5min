@@ -1,5 +1,4 @@
-﻿//https://metanit.com/sharp/mvc5/24.4.php
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using Microsoft.Owin;
