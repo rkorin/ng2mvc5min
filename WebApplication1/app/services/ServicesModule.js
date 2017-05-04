@@ -9,20 +9,23 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 const core_1 = require('@angular/core');
-let AppComponent = class AppComponent {
+let all_providers = [];
+let ServicesModule_1;
+let ServicesModule = ServicesModule_1 = class ServicesModule {
+    static forRoot() {
+        return {
+            ngModule: ServicesModule_1,
+            providers: all_providers,
+        };
+    }
 };
-AppComponent = __decorate([
-    core_1.Component({
-        selector: 'app',
-        encapsulation: core_1.ViewEncapsulation.None,
-        template: `app-b 
-
-<router-outlet></router-outlet>
-
-app-end
-`
+ServicesModule = ServicesModule_1 = __decorate([
+    core_1.NgModule({
+        imports: [],
+        providers: all_providers,
+        declarations: []
     }), 
     __metadata('design:paramtypes', [])
-], AppComponent);
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+], ServicesModule);
+exports.ServicesModule = ServicesModule;
+//# sourceMappingURL=ServicesModule.js.map

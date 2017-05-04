@@ -9,20 +9,20 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 const core_1 = require('@angular/core');
-let AppComponent = class AppComponent {
+let Dashboard = class Dashboard {
+    constructor() {
+    }
 };
-AppComponent = __decorate([
+Dashboard = __decorate([
     core_1.Component({
-        selector: 'app',
+        selector: 'dashboard',
         encapsulation: core_1.ViewEncapsulation.None,
-        template: `app-b 
-
-<router-outlet></router-outlet>
-
-app-end
-`
+        styles: ['./dashboard.scss'],
+        template: `<div class="col-md-12">
+dashboard component
+</div>`
     }), 
     __metadata('design:paramtypes', [])
-], AppComponent);
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+], Dashboard);
+exports.Dashboard = Dashboard;
+//# sourceMappingURL=dashboard.component.js.map

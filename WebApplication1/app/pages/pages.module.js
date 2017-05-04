@@ -9,28 +9,23 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 const core_1 = require('@angular/core');
-const platform_browser_1 = require('@angular/platform-browser');
-const forms_1 = require('@angular/forms');
-const app_component_1 = require('./app.component');
-const http_1 = require('@angular/http');
+const common_1 = require('@angular/common');
 const router_1 = require('@angular/router');
-const app_routing_1 = require('./app.routing');
-const pages_component_1 = require('./pages/pages.component');
-const dashboard_component_1 = require('./pages/dashboard/dashboard.component');
-let AppModule = class AppModule {
+const forms_1 = require('@angular/forms');
+const pages_routing_1 = require('./pages.routing');
+const pages_component_1 = require('./pages.component');
+let PagesModule = class PagesModule {
 };
-AppModule = __decorate([
+PagesModule = __decorate([
     core_1.NgModule({
-        imports: [
-            platform_browser_1.BrowserModule,
-            forms_1.FormsModule,
-            http_1.HttpModule,
-            router_1.RouterModule,
-            app_routing_1.routing],
-        declarations: [app_component_1.AppComponent, pages_component_1.Pages, dashboard_component_1.Dashboard],
-        bootstrap: [app_component_1.AppComponent]
+        imports: [common_1.CommonModule, forms_1.FormsModule, pages_routing_1.routing],
+        declarations: [
+            pages_component_1.Pages
+        ],
+        providers: [],
+        exports: [router_1.RouterModule]
     }), 
     __metadata('design:paramtypes', [])
-], AppModule);
-exports.AppModule = AppModule;
-//# sourceMappingURL=app.module.js.map
+], PagesModule);
+exports.PagesModule = PagesModule;
+//# sourceMappingURL=pages.module.js.map

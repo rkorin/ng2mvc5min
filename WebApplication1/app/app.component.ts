@@ -1,11 +1,13 @@
-﻿import { Component } from '@angular/core';
+﻿import { Component, ViewEncapsulation } from '@angular/core';
 
 @Component({
-    selector: 'my-app',
-    template: `<h1>Добро пожаловать {{name}}!</h1>
-                <label>test Введите имя:</label>
-                <input [(ngModel)]="name" placeholder="name">`
+    selector: 'app',
+    encapsulation: ViewEncapsulation.None,
+    template: `app-b 
+
+<router-outlet></router-outlet>
+
+app-end
+`
 })
-export class AppComponent {
-    name = '';
-}
+export class AppComponent { }

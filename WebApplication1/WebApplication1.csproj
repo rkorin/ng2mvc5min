@@ -250,6 +250,9 @@
     <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ApiGroup.cshtml" />
     <Content Include="Areas\HelpPage\Views\Help\Api.cshtml" />
     <Content Include="package.json" />
+    <Content Include="app\pages\dashboard\dashboard.scss" />
+    <Content Include="app\pages\pages.scss" />
+    <Content Include="app\app.scss" />
     <None Include="Scripts\jquery-1.10.2-vsdoc.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -293,7 +296,21 @@
   <ItemGroup>
     <TypeScriptCompile Include="app\app.component.ts" />
     <TypeScriptCompile Include="app\app.module.ts" />
+    <TypeScriptCompile Include="app\app.routing.ts" />
+    <TypeScriptCompile Include="app\index.ts" />
     <TypeScriptCompile Include="app\main.ts" />
+    <TypeScriptCompile Include="app\pages\dashboard\dashboard.component.ts" />
+    <TypeScriptCompile Include="app\pages\dashboard\index.ts" />
+    <TypeScriptCompile Include="app\pages\index.ts" />
+    <TypeScriptCompile Include="app\pages\pages.component.ts" />
+    <TypeScriptCompile Include="app\services\index.ts" />
+    <TypeScriptCompile Include="app\services\ServicesModule.ts" />
+    <TypeScriptCompile Include="app\services\webapi\base.service.ts" />
+    <TypeScriptCompile Include="app\services\webapi\index.ts" />
+    <TypeScriptCompile Include="app\services\webapi\models\base.model.ts" />
+    <TypeScriptCompile Include="app\services\webapi\models\index.ts" />
+    <TypeScriptCompile Include="app\services\webapi\models\result.base.model.ts" />
+    <TypeScriptCompile Include="app\services\webapi\WebApiModule.ts" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />

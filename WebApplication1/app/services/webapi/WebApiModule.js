@@ -9,20 +9,26 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 const core_1 = require('@angular/core');
-let AppComponent = class AppComponent {
+const _1 = require('./');
+let all_providers = [
+    _1.WebApiService
+];
+let WebApiModule_1;
+let WebApiModule = WebApiModule_1 = class WebApiModule {
+    static forRoot() {
+        return {
+            ngModule: WebApiModule_1,
+            providers: all_providers,
+        };
+    }
 };
-AppComponent = __decorate([
-    core_1.Component({
-        selector: 'app',
-        encapsulation: core_1.ViewEncapsulation.None,
-        template: `app-b 
-
-<router-outlet></router-outlet>
-
-app-end
-`
+WebApiModule = WebApiModule_1 = __decorate([
+    core_1.NgModule({
+        imports: [],
+        providers: all_providers,
+        declarations: []
     }), 
     __metadata('design:paramtypes', [])
-], AppComponent);
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+], WebApiModule);
+exports.WebApiModule = WebApiModule;
+//# sourceMappingURL=WebApiModule.js.map
