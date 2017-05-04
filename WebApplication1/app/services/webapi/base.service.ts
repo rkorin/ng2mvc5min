@@ -1,7 +1,7 @@
 ﻿import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
 import { Http, Response, Headers, RequestOptions, URLSearchParams } from '@angular/http';
-import { PostResultModel } from './models';
+import { PostResultModel } from './models/result.base.model';
 
 // Statics
 import 'rxjs/add/observable/throw';

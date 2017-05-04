@@ -1,6 +1,6 @@
 ﻿import { NgModule, ModuleWithProviders } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import {  WebApiService } from './';
+import { WebApiService } from './base.service';
 
 let all_providers = [
     WebApiService

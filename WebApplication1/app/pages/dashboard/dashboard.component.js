@@ -8,21 +8,21 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-const core_1 = require('@angular/core');
-let Dashboard = class Dashboard {
-    constructor() {
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = require("@angular/core");
+var Dashboard = (function () {
+    function Dashboard() {
     }
-};
+    return Dashboard;
+}());
 Dashboard = __decorate([
     core_1.Component({
         selector: 'dashboard',
         encapsulation: core_1.ViewEncapsulation.None,
         styles: ['./dashboard.scss'],
-        template: `<div class="col-md-12">
-dashboard component
-</div>`
-    }), 
-    __metadata('design:paramtypes', [])
+        templateUrl: '/app/pages/dashboard/dashboard.html'
+    }),
+    __metadata("design:paramtypes", [])
 ], Dashboard);
 exports.Dashboard = Dashboard;
 //# sourceMappingURL=dashboard.component.js.map

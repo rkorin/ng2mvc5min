@@ -1,7 +1,8 @@
 "use strict";
-const router_1 = require('@angular/router');
-const pages_component_1 = require('./pages/pages.component');
-const dashboard_component_1 = require('./pages/dashboard/dashboard.component');
+Object.defineProperty(exports, "__esModule", { value: true });
+var router_1 = require("@angular/router");
+var pages_component_1 = require("./pages/pages.component");
+var dashboard_component_1 = require("./pages/dashboard/dashboard.component");
 exports.routes = [
     { path: '', redirectTo: 'pages', pathMatch: 'full' },
     {

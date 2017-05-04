@@ -3,7 +3,7 @@
 @Component({
     selector: 'app',
     encapsulation: ViewEncapsulation.None,
-    template: `app-b 
+    template: `app-b 1
 
 <router-outlet></router-outlet>
 

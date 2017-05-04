@@ -8,31 +8,21 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-const core_1 = require('@angular/core');
-let Pages = class Pages {
-    constructor() {
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = require("@angular/core");
+var Pages = (function () {
+    function Pages() {
     }
-};
+    return Pages;
+}());
 Pages = __decorate([
     core_1.Component({
         selector: 'pages',
         encapsulation: core_1.ViewEncapsulation.None,
         styles: [],
-        template: `      
-    <div class='container'>
-<div class='row'>
-pages-header
-</div>
-      <div class='row'>        
-        <router-outlet></router-outlet>
-      </div>
-<div class='row'>
-pages-footer
-</div>
-    </div>  
-    `
-    }), 
-    __metadata('design:paramtypes', [])
+        template: "      \n    <div class='container'>\n<div class='row'>\npages-header\n</div>\n      <div class='row'>        \n        <router-outlet></router-outlet>\n      </div>\n<div class='row'>\npages-footer\n</div>\n    </div>  \n    "
+    }),
+    __metadata("design:paramtypes", [])
 ], Pages);
 exports.Pages = Pages;
 //# sourceMappingURL=pages.component.js.map

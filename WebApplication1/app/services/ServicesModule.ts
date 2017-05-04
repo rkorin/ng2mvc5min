@@ -2,8 +2,7 @@
 import { CommonModule } from '@angular/common';
 
 
-let all_providers = [
-];
+let all_providers: Array<any> = new Array<any>();
 
 @NgModule({
     imports: [],
